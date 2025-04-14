@@ -1,5 +1,100 @@
+/* Color palette */
+:root {
+  --blue-dark: #0a2342;
+  --blue-mid: #1d3557;
+  --blue-light: #457b9d;
+  --blue-accent: #a8dadc;
+  --white: #f1faee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: #f4f4f4;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--white);
+  color: var(--blue-dark);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--blue-dark);
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  float: left;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: var(--blue-mid);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: var(--blue-accent);
+  color: var(--blue-dark);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.features {
+  background-color: var(--white);
+  padding: 60px 20px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-card {
+  background-color: var(--blue-light);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  max-width: 300px;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--blue-dark);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
